@@ -3,15 +3,39 @@
 <head> <!--Tag de Abertura-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AMO MINHA NAMORADAAAAAA</title>
-<style>
+    <meta name="description" content="Um guia completo sobre HTML e suas tags">
+    <meta name="keywords" content="HTML, tags, programação, web design">
+    <meta name="author" content="Lucas Silva Okubo">
 
-</style>
+    <link rel="icon" href="./coutinho-voltou-ao-vasco-como-grande-esperanca-do-time-no-brasileirao-2343552-article.webp" type="image/x-png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Honk:MORF@15&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&display=swap">
+
+    <link rel="stylesheet" href="./style.css">
+
+   
+    <title>AMO MINHA NAMORADAAAAAA</title>
+
 </head> <!-- Tag de fechamento-->
 <body>
-    <h1>Bem-vindo ao site!
-    <h2>Matheus Bidu merecia vaga na Copa do Mundo esse ano! 
-    <button type="button" id="meuBotao"> Botão grande </button>
 
+    <header>
+    <h1 style="font-family: Honk">Bem-vindo ao site!</h1>
+    <img id="jogador" src="https://ds-images.bolavip.com/news/image?src=https://images.bolavip.com/webp/br/full/BBR_20250807_BBR_1463026_AGIF25080622195225-1024x683_759a6873.webp&width=1024&height=683" alt="Matheus Bidu" width="300" height="300"
+</header>
+<main>
+    <h2 id="paragrafo" style="font-family: Honk">Matheus Bidu merecia vaga na Copa do Mundo esse ano!</h2>
+    <button id="botao">CLique para Matheus Bidu ser convocado</button>
+     <script>
+        const paragrafo = document.querySelector("#paragrafo");
+        const botao= document.querySelector("#botao");
+            botao.addEventListener("click", () =>{
+                paragrafo.innerHTML = "Matheus Bidu Foi convocado!";
+        });
+       
+       
+
+    </script>
+   </main>
 </body>
-</html>
+</html> 
