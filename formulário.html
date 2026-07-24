@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Formulário</title>
+</head>
+<body style="background-color: rgb(38, 0, 50);">
+    <form id="meuFormulario" style="color: aliceblue;"
+    action="https://webhook.site/24ec39d0-0f0c-43a7-b11f-64506c61dc50"
+    method="post">
+        <label for="name">Nome:</label>
+            <input 
+            type="text"
+            id="nome" 
+            name="nome"
+            placeholder="Digite seu nome" 
+            required>
+
+        <label for="email">E-mail:</label>
+            <input type="email" 
+            id="email" 
+            name="E-mail"
+            placeholder="Digite seu E-mail" 
+            required> <!--Id deve ser igual ao for do label "email"-->
+        
+        <label for="password">Senha</label>
+            <input
+            type="password"
+            id="password"
+            name="senha"
+            placeholder="Digite sua Senha"
+            minlength="8"
+            pattern="(?=.*[a-z])(?=.*[A-Z])(?=*\d)(?=*[@$%*?&][A-Za-z\d@$%*?&]{8,})"
+            required>
+        <label for="idade">Idade</label>
+            <input style="width: 37px;" type="number" 
+            id="idade" 
+            name="idade" 
+            min="18"
+            max="120" 
+            step="1"
+            requierd>
+
+        <button type="submit">Enviar</button>
+            <img src="./coutinho-voltou-ao-vasco-como-grande-esperanca-do-time-no-brasileirao-2343552-article.webp" 
+            style="margin-top: 10%; 
+            margin-left: 33%; 
+            width: 450px; 
+            border-radius: 15px; 
+            border: 5px double rgb(255, 242, 0);" >
+    </form>
+
+    <button type="button" onclick="location.href='./index.html'" style="margin-bottom: 20px;">
+        Voltar para Início
+    </button>
+    
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Formulario de Cadastro</h1>
+        <form action="https://webhook.site/24ec39d0-0f0c-43a7-b11f-64506c61dc50" method="post">
+        <label for="nome">Nome:</label>
+            <input 
+            type="text" 
+            id="nome" 
+            name="nome" 
+            required
+            min-lenght="2"
+            max-lenght="302151"
+            placeholder="Digite o seu nome"
+        >
+        <br><br>
+        <label for="email">E-mail:</label>
+            <input 
+            type="email" 
+            id="email"
+            name="email" 
+            required
+            placeholder="Example@dominio.com"
+        >
+        <br><br>
+        <label for="telefone">Telefone:</label>
+            <input 
+            type="tel" 
+            id="telefone" 
+            name="telefone" 
+            required
+            placeholder="(XX) XXXXX-XXXX"
+            pattern="\(\d{2}\) \d{4,5}-\d{4}"
+
+        >
+        <br><br>
+        <label for="idade">Idade:</label>
+            <input type="number" 
+            id="idade" 
+            name="idade" 
+            min="18"
+            max="126" 
+            step="1"
+            requierd>
+        <br><br>
+        <label for="data-nascimento">Insira Sua Data de Nascimento:</label>
+            <input 
+            type="date" 
+            id="data-nascimento" 
+            name="data-nascimento" 
+            required
+            min="1900-01-01"
+            max-lenght="2026-07-24"
+        >
+        <br><br>
+        <label for="website">Página Pessoal:</label>
+            <input 
+            type="url" 
+            id="website" 
+            name="website"
+            placeholder="https://www.seusite.com"
+        >
+        <br><br>
+        <label for="comentarios">Comentários:</label>
+            <textarea 
+            id="comentarios" 
+            name="comentarios" 
+            rows="4"
+            cols="51"
+            maxlength="501"
+            placeholder="Adicione um comentario"
+        ></textarea>
+        <br><br>
+
+        <button typ="Submit">Cadastrar</button>
+        <br><br>
+         <a>
+                 &copy; 2026 - Todos os direitos reservados
+         </a>
+          <div class="redes">
+    <a href="https://www.tiktok.com/@okubo077" target="_blank">
+        <i class="fa-brands fa-tiktok tiktok"></i>
+    </a>
+
+    <a href="https://www.instagram.com/lcz_okubo" target="_blank">
+        <i class="fa-brands fa-instagram instagram"></i>
+    </a>
+    <a href="https://www.youtube.com/@viniccius13" target="_blank">
+        <i class ="fa-brands fa-youtube youtube"></i>
+    </a>
+     <a href="https://www.linkedin.com/in/lucas-silva-okubo-0044b3402/" target="_blank">
+        <i class ="fa-brands fa-linkedin linkedin"></i>
+    </div>
+    </form>
+       <img src="./coutinho-voltou-ao-vasco-como-grande-esperanca-do-time-no-brasileirao-2343552-article.webp">
+</body>
+</html>

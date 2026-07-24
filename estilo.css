@@ -1,39 +1,23 @@
-
-#botao{
-height: 80px;
-width:250px;
-text-align: center;
-justify-content: center;
-}
-
 body{
-    background-color: rgb(121, 62, 177);
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 121, 226); 
+    font-family: 'Times New Roman', Times, serif; 
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    height: 248vh;
-    margin: 20px;
-    
 }
-
-h1 {
-    font-size: 55px;
+img {
+    margin-top: -4000px; 
+            margin-left: 67%; 
+            width: 225px; 
+            height: 300px;
+            border-radius: 15px; 
+            border: 5px double rgb(0, 121, 226);
 }
-
-#Cbj{
- color: #ffffff;
- background: rgb(80, 36, 122); 
- font-size: medium;
- font-family: 'Times New Roman', Times, serif;
- padding: 15px;
- border-radius: 15px;
-}
-ul, ol {
-    text-align: left;
-    align-self: flex-start;
-
+button{
+    padding: 10px 15px;
+    background-color: rgb(73, 125, 202);
+    color: aliceblue;
+    border-radius: 5px;
+    border: none;
 }
 .redes {
     align-items: center;
@@ -45,7 +29,7 @@ ul, ol {
 
 .redes a {
     font-size: 40px;
-    color: white;
+    color: rgb(173, 173, 173);
     text-decoration: none;
     transition: 0.3s;
     display: inline-block;
