@@ -1,0 +1,66 @@
+        /* Estilização Externa*/
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000000;
+    color: #2c3e50;
+    margin: 0;
+    padding-top: 0;
+
+}
+
+h1{
+    text-align: left;
+    font-size: 90px;
+    color:#a6bcd2;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 0;
+    padding-left: 2px;
+    display: inline-block;  
+    margin: 0;
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 10px 0;
+    position: inherit;
+}
+.Start{
+    color:#464646;
+    cursor: pointer;
+    font-size: 24px;
+    transition: 0.7s ease;
+    display: inline-block;
+    transform-origin: center;
+    
+}
+.Start:hover{
+    transform: scale(1.4);
+    color:#a6bcd2;
+    font-family: Splash;
+}
+
+.lorem{
+    color: rgba(130, 147, 2)
+}
+
+p.lorem {
+    text-align:start
+}                   
+
+.conteudo{
+    max-width: 1200px;
+    min-width: 100px;
+    width: 100%;
+}
+#okubo{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+}
+button:hover{
+    color:white;
+    background-color: orange;
+    transform: scale(1.1);
+}

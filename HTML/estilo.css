@@ -58,3 +58,16 @@ table {
     color: aliceblue;
     border-radius: 5px;
 }
+
+/* Caixa em volta do texto */
+.caixa {
+    display:flexbox;
+    border: 210px solid rgb(30, 78, 120);
+    background-color: rgba(118, 146, 170, 0);
+    padding: 30px 12px;
+    border-radius: 8px;
+    color: inherit;
+    text-align: center;
+    margin: 12px auto;
+    max-width: 95%;
+}

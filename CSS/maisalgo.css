@@ -1,0 +1,45 @@
+    html{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+        }
+    .menu-container{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+        }
+    .caixa-menu{
+           width: 150px;
+           height: 300px;
+           border:3px solid #FFFF;
+           background: transparent;
+           color: #FFFF;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           border-radius: 4px;
+           font-family: 'Times New Roman', Times, serif;
+           font-weight: bold;
+           text-transform: uppercase;
+           cursor: pointer;
+           transition: 0.7s ease;
+           text-decoration: none;
+        }
+    .caixa-menu:hover{
+        opacity: 0.8; /* reduz ligeiramente a opacidade*/
+        transform: scale(1.1);
+    }
+
+    #caixa1:hover {
+            background-color: rgb(31, 31, 94);
+    }
+    #caixa2:hover {
+            background-color: rgb(94, 35, 31);
+    }
+    #caixa3:hover {
+            background-color: rgb(79, 94, 31);
+    }
