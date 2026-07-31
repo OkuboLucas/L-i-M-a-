@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.posicao.css">
+    <title>Propriedade Position </title>
+    <style>
+        div.static{
+            position: static;
+            border: 5px solid #aaba00;
+        }
+        div.relative{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 2.5px solid #aaba00;
+            left: 30px
+        }
+        div.fixed{
+            position: fixed;
+            border: 1.25px solid #aaba00;
+            bottom: 0;
+            right: 0;
+            width: 300px;
+            height: 200px;
+            background-image: url(./OIP.webp)
+        }
+         div.absolute{
+            position: absolute;
+            top: 80px;
+            right: 3px;
+            width: 290px;
+            height: 115px ;
+            border: 0.625px solid #aaba00
+        }
+         div.sticky{
+            position: sticky;
+            top: 0;
+            padding: 5px;
+            background-color: darkgray;
+            border: 0.3125px solid #aaba00;
+            z-index: 100;
+           
+        }
+    </style>
+</head>
+<body>
+    <p> A propriedade Position do CSS pode assumir os seguintes valores:</p>
+    <ul>
+        <li>
+            static - Este é o valor padrão. O elemento é posicionado de acordo com o fluxo normal do documento.
+        </li>
+        <br>
+        <li> 
+            relative - O elemento é posicionado em relação a sua posição no fluxo normal do documento.
+        </li>
+        <br>
+        <li>
+            fixed - O elemento é posicionado em relação ao viewport.
+        </li>
+        <li>
+            absolute - O elemento é posicionado em relação ao ancestral mais próximo.
+        </li>
+        <li>
+            sticky - O elemento varia entre relative e fixed dependendo da posição da rolagem.
+        </li>
+    </ul>
+    <p> A posição dos elementos é definida pelas propriedades top, bottom. left e right </p>
+     <div class="sticky">
+        Minha posição é grudenta;
+    </div>
+    <div class="static">
+        Este elemento div tem position: static;
+    </div>
+    <div class="relative">
+        Este elemento div tem position: relative;
+        <div class="absolute">
+            Estel elemento div tem position absolute; o que significa que ele é posicionado em relação ao ancestral POSICIONADO mais próximo.
+        </div>
+
+    </div>
+    <div class="fixed" style="font-size: large;">
+        Este elemento div tem position: fixed;
+    </div>
+    <p>Lorem ipsum Seadra was found in S.S. Aqua. Suspicious Child visited Giant's Bed in Galar. The leader at Veilstone Gym specializes in Fighting Pokémon. Blastoise was found in Battle Maison. Golbat used Bite. Victreebel learned Razor Leaf. Skier gave a Aguav Berry to Rapidash. Psyduck is a Duck Pokémon.
+
+Lorem ipsum Champion traveled from Route 16 to Laverre City via Route 15. Cooltrainer used a Premier Ball to catch Articuno. Machop used Leer. The leader at Pewter Gym specializes in Rock Pokémon. You can find the Laverre Gym in Kalos. Gym Trainer's favorite Pokémon is Seaking. Jigglypuff evolved into Wigglytuff.
+
+Lorem ipsum Staryu is a Star Shape Pokémon. You can earn the Plant Badge at Coumarine Gym. Dewgong used Rest. Persian used Pay Day. Kabuto evolved into Kabutops. Captain used a Dream Ball to catch Eevee. The leader at Sootopolis Gym specializes in Water Pokémon. Magnemite evolved into Magneton. Kangaskhan is a Parent Pokémon.
+
+Lorem ipsum Bug Maniac traveled from Poni Coast to Battle Tree via Poni Gauntlet. Dragonair was found in Connecting Cave. Hex Maniac spotted Gloom in Sinnoh. Pokémon Trainer explored Jubilife City in Sinnoh. Tamer used a Cherish Ball to catch Aerodactyl. The leader at Hearthome Gym specializes in Ghost Pokémon. Persian learned Fury Swipes.
+
+Lorem ipsum Jogger spotted Raticate in Galar. Meowth evolved into Persian. Sandshrew is a Mouse Pokémon. You can find the Opelucid Gym in Unova. Team Flare Admin gave a Tanga Berry to Articuno. Aether Foundation Employee gave a Maranga Berry to Poliwag. Tauros learned Rage. The leader at Lavaridge Gym specializes in Fire Pokémon.
+
+Lorem ipsum You can find the Celadon Gym in Kanto. Commander gave a Custap Berry to Venonat. Super Nerd used a Dusk Ball to catch Ekans. Dragonite is a Dragon Pokémon. Eevee used Tackle. Clown journeyed along Route 5 between Turffield and Hulbury. Team Plasma gave a Kee Berry to Scyther. Motorcyclist used a Great Ball to catch Haunter.
+
+Lorem ipsum You can find the Lavaridge Gym in Hoenn. Gentleman took Route 9 from Memorial Hill to Diglett's Tunnel. Jr. Trainer♂ visited Route 203 in Sinnoh. Magnemite learned Supersonic. Moltres was found in Solaceon Town. Expert spotted Poliwhirl in Sinnoh. You can find the Cyllage Gym in Kalos. You can find the Vermilion Gym in Kanto. You can earn the Freeze Badge at Icirrus Gym.
+
+Lorem ipsum Rangers journeyed along Route 104 between Rustboro City and Route 105. Charmander was found in Valor Lakefront. Cowgirl spotted Onix in Sinnoh. Rising Star Duo visited Mossdeep City in Hoenn.
+
+Lorem ipsum Jogger gave a Yache Berry to Cubone. You can find the Fortree Gym in Hoenn. Collector's favorite Pokémon is Poliwag. The Alola region has no gyms. Teacher spotted Doduo in Alola.
+
+Lorem ipsum You can find the Cinnabar Gym in Kanto. Kangaskhan is a Parent Pokémon. Team Plasma's favorite Pokémon is Grimer. Tuber's favorite Pokémon is Sandslash. The leader at Nimbasa Gym specializes in Electric Pokémon. The leader at Petalburg Gym specializes in Normal Pokémon. GAME FREAK's favorite Pokémon is Dodrio. Engineer spotted Vaporeon in Galar.
+
+Lorem ipsum Artist gave a Grepa Berry to Marowak. Juggler explored Route 212 in Sinnoh. Horsea evolved into Seadra. The leader at Driftveil Gym specializes in Ground Pokémon. Fearow learned Leer. Aerodactyl is a Fossil Pokémon. Oddish evolved into Gloom. Ruin Maniac spotted Kabuto in Kalos.
+
+Lorem ipsum Janitor's favorite Pokémon is Metapod. Kingler is a Pincer Pokémon. Rich Boy used a Moon Ball to catch Vileplume. Socialite visited Battle Frontier in Johto. Gentleman gave a Yache Berry to Abra. Punk Guy explored Shoal Cave in Hoenn. Sightseer's favorite Pokémon is Gastly. Team Skull visited Dragonspiral Tower in Unova. Top Champion's favorite Pokémon is Mewtwo.
+
+Lorem ipsum Kabutops was found in Route 5. Machamp learned Focus Energy. Ditto was found in Lost Hotel. The leader at Blackthorn Gym specializes in Dragon Pokémon. Magmar learned Smoke Screen.
+
+Lorem ipsum You can earn the Rising Badge at Blackthorn Gym. The leader at Goldenrod Gym specializes in Normal Pokémon. Snorlax was found in Union Cave. Spearow evolved into Fearow. Butler's favorite Pokémon is Marowak. Hex Maniac used a Repeat Ball to catch Ditto. Omastar learned Horn Attack. Harlequin took Route 133 from Route 132 to Route 134.
+
+Lorem ipsum Gentleman gave a Coba Berry to Shellder. Tentacruel was found in Aquacorde Town. The leader at Goldenrod Gym specializes in Normal Pokémon. Idol journeyed along Route 14 between Lumiose City and Laverre City. Team Magma Grunt gave a Roseli Berry to Paras. Bug Maniac journeyed along Route 129 between Route 128 and Route 130.
+
+Lorem ipsum Preschooler visited Seaside Cycling Road in Hoenn. Interviewer's favorite Pokémon is Bellsprout. Paras is a Mushroom Pokémon. The leader at Sootopolis Gym specializes in Water Pokémon. Weepinbell used Stun Spore. Bellhop's favorite Pokémon is Raticate.
+
+Lorem ipsum The leader at Eterna Gym specializes in Grass Pokémon. Drowzee was found in Warm-Up Tunnel. You can find the Pewter Gym in Kanto. Pilot visited Route 213 in Sinnoh. Young Couple's favorite Pokémon is Mewtwo. Ace Duo gave a Rindo Berry to Geodude. Horsea was found in Route 10. Pokémon Breeder gave a Starf Berry to Lapras.
+
+Lorem ipsum Drowzee was found in Route 22. You can find the Petalburg Gym in Hoenn. Team Star Grunt journeyed along Route 4 between Turffield and Galar Mine. Champion visited Friend Safari in Kalos. You can earn the Dragon Badge at Hammerlocke Stadium. Janitor used a Sport Ball to catch Venonat.
+
+Lorem ipsum Sr. and Jr.'s favorite Pokémon is Horsea. Jigglypuff evolved into Wigglytuff. Ponyta used Take Down. You can earn the Freeze Badge at Icirrus Gym. Preschooler's favorite Pokémon is Dragonair. Machop evolved into Machoke. Growlithe used Flamethrower. The Riches gave a Colbur Berry to Gastly. Mr. Mime was found in Soothing Wetlands.
+
+Lorem ipsum Dratini is a Dragon Pokémon. Horsea learned Smokescreen. Poliwag was found in Route 115. You can find the Lavaridge Gym in Hoenn. You can earn the Freeze Badge at Icirrus Gym. Dugtrio is a Mole Pokémon.</p>
+    
+</body>
+</html>

@@ -1,0 +1,19 @@
+body {
+    background-image: url(./IMG_20260718_151807017_HDR.jpg);
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 250px;
+    
+}
+button{
+    width: 300px;
+    height: 100px;
+    background-color: #ffffff53
+}
