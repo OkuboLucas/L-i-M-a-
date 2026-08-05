@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop</title>
+    <link rel="stylesheet" href="petshopstyle.css">
+    <style>
+        :root { /* root se referencia ao pai / mais ancestral (exceto o html) dos elementos */
+            --primary-color: #19591e;
+            --secondary-color: orange;
+            --background-color: #f4f4f9;
+            --text-color: #333;
+        }
+        [data-theme="dark"]{
+            --primary-color: #377c3b;
+            --secondary-color: #71b441;
+            --background-color: #222;
+            --text-color: #000000;
+        }
+        body{
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a{
+            color:var(--primary-color);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        /*.navbar{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .nav-links{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            gap: 30px;
+        } */
+        
+        a:hover{
+            color: var(--secondary-color);
+        }
+        .btn {
+            background-color: var(--primary-color);
+            color: var(--background-color);
+            border:none;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover{
+            background-color: var(--secondary-color);
+        }
+        img{
+            width: 200px;
+            height: 100x;
+        }
+        
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="logo"> The Cube Pet </h1>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href=#>Início</a></li>
+                    <li><a href=#services>Serviços</a></li>
+                    <li><a href=#about> Sobre nós </a></li>
+                    <li><a href=#contact>Contato</a></li>
+                </ul>
+                <button class="menu-toggle" arial-label="Abrir Menu">&#9776;</button>
+            </nav>
+            <button id="theme-toggle" class="btn">Alternar Tema</button>
+        </div>
+    </header>
+    <main class="main-content container">
+        <aside class="sidebar">
+            <h2>Sobre o Pet Shop</h2>
+            <p> A The Cube Pet oferece serviços de alta qualidade para cuidar do seu melhor amigo.</p>
+            <img src="https://i.pinimg.com/736x/79/df/49/79df49506fb97b67db04468295d2ada3.jpg" alt="Banho e Tosa">
+            <ul class="sidebar-link">
+                <li><a href="#"> Clínica Veterinária</a></li>
+                <li><a href="#"> Banho e Tosa</a></li>
+                <li><a href="#"> Pet Hotel</a></li>
+                <li><a href="#"> Produtos para Pets</a></li>
+            </ul>
+        </aside>
+        <section class="cards">
+        <h2>Nossos Serviços</h2>
+        <div class="card">
+            <img src="https://petiva.com.br/wp-content/uploads/2023/03/Clinica-Veterinaria-perto-de-mim-mais-proxima-Centro-de-Sao-Paulo-Consultas-doencas-vacinacao-Castracao-internacao-alimentacao-atendimento-especializado-caes-gatos.-consulta-veterinaria-SALA-scaled.jpg" alt="Clínica Veterinária">
+            <h3>Clínica Veterinária</h3>
+            <p> Cuidado Completo para a saúde do seu pet.</p>
+            <button class="btn"> Saiba mais</button>
+        </div>
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.DHj2K1vHAYPo9616X4gfUAHaE8?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Banho e Tosa">
+            <h3>Banho e Tosa</h3>
+            <p> Deixe seu pet limpinho e cheiroso!</p>
+            <button class="btn"> Saiba mais</button>
+        </div> 
+        <div class="card">
+            <img src="https://th.bing.com/th/id/R.874293480c594734dcf071c67f2f9c56?rik=mZnJ1NrI1vCBTw&pid=ImgRaw&r=0" alt="Pet Hotel">
+            <h3>Pet Hotel</h3>
+            <p>Conforto e segurança enquanto você está fora!.</p>
+            <button class="btn"> Saiba mais</button>
+        </div> 
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; The Cube Pet. Todos os direitos reservados.</p>
+            <p><strong>Endereço:</strong> Rua Aicaraglio, 607. Bairro Pet - Cidade dos Animais </p>
+            <p><strong>Telefone:</strong> (11) 91791-8638</p>
+            <p><strong>Horário de Atendimento: </strong> Segunda à Sexta: 8h - 18h | Sábados: 9h - 14h</p>
+            
+        </div>
+    </footer>
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+        themeToggle.addEventListener("click", ()=> {
+            document.body.dataset.theme = document.body.dataset.theme === "dark" ? "" : "dark";
+        })
+    </script>
+</body>
+</html>

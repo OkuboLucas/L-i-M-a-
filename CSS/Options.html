@@ -5,22 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Options</title>
     <style>
-        body {
-            background-color: black;
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            height: 100vh;
+            background-color: #000;
             color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
         }
-    </style>
-</head>
-    <h1>Options</h1>
-<body>
-     <style>
-        html{
-            background-color: rgb(0, 0, 0);
-            color: white;
+        .options-container{
+            width: 100%;
+            max-width: 560px;
+            padding: 26px 24px;
+            background: rgba(14, 16, 28, 0.86);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+            backdrop-filter: blur(12px);
         }
+        .option-card{
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          border-radius: 20px;
+          padding: 22px;
+        }
+        .option-card h2 {
+            margin-bottom: 10px;
+            color: #abc5c4;
+            font-size: 2rem;
+        }
+        .option-card p {
 
+            font-size: 14px;
+            margin: 16px 0;
+            line-height: 1.6;
+        }
     </style>
-    
+</head>    
+    <div class="options-container">
+        <div class="option-card">
+            <h2>Opções</h2>
+            <p>Personalize cores e estilos para deixar a interface mais agradável.<p>
+            <div>
+                <span> Ajuste o nível de dificuldade para garantir a mehor jogabilidade para o usuário</span>
+                <select id="difficulty">
+                    
+                    <option>Fácil</option>
+                    <option selected>Normal</option>
+                    <option>Difícil</option>
+                    <option>Oloko Difícil ++</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="volume">Volume</label>
+                <span class="small"> Ajuste a barra para atingir o volume desejado</span>
+                <input id="volume" type="range" min="0" max="100">
+            </div>
+            <div class="row">
+                <label>Legendas</label>
+                <div class="toggle-box">
+                    <input id="legendas" type="checkbox" checked>
+                    <label for="legendas">Ativar Legendas</label>
+                </div>
+            </div>
+            <a href="./maisalgo.html" id="Voltar">
+                <button>Voltar</button>
+            </a>
+        </div>
+    </div>
 </body>
 </html>

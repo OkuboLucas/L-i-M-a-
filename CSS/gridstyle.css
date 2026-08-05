@@ -38,7 +38,7 @@ body{
     grid-area: content;
     background-color: white;
     padding: 20px;
-    box-shadow: 0px 4px 10px #0000006d
+    box-shadow: 0px 4px 10px  #0000006d
 }
 .footer{
     grid-area: footer;
