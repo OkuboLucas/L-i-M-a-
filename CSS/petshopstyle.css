@@ -2,10 +2,24 @@
     --primary-color: #ff6f61;
     --secondary-color: #da605e;
     --background-color: #f4f4f9;
-    --text-color: #333;
+    --text-color: #000000;
     --light-text-color: #666;
     --border-radius: 12px;
+    --itens-color: white;
+    --box-shadow: rgba(0, 0, 0, 0.1);
+    --shadow-hover: rgba( 0, 0, 0, 0.2); 
+
 }
+    [data-theme="dark"]{
+            --primary-color: #377c3b;
+            --secondary-color: #71b441;
+            --background-color: #222;
+            --text-color: #ffffff;
+            --itens-color: #181818;
+            --box-shadow: rgba(255, 255, 255, 0.35);
+            --shadow-hover: rgba( 255, 255, 255 , 0.5); 
+        }
+
 
 * {
     margin: 0;
@@ -20,6 +34,7 @@ body{
 .container {
     width: 80%;
     margin: 0 auto;
+    
 }
 .header {
     background-color: var(--primary-color);
@@ -67,18 +82,19 @@ body{
 }
 .sidebar{
     width: 30%;
-    background-color: white;
+    background-color: var(--itens-color);
     border-radius: var(--border-radius);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px var(--box-shadow);
     padding: 1rem;
 }
 .sidebar img{ 
     width: 100%;
+    margin: 10px 0;
     border-radius: var(--border-radius);
 }
 .sidebar h2 {
     margin-bottom: 1rem;
-    color: var(--primary-color)
+    color: var(--text-color)
 
 }
 .sidebar p {
@@ -98,7 +114,8 @@ body{
     transition: color 0.3s;
 }
 .sidebar-link li a:hover{
-    color: var(--secondary-color)
+    color: var(--secondary-color);
+    
 
 }
 .cards {
@@ -109,26 +126,30 @@ body{
     color: var(--primary-color);
 }
 .card{
-    background-color: white;
+    background-color: var(--itens-color);
     border-radius: var(--border-radius);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--box-shadow);
     padding: 1rem;
     margin-bottom: 1rem;
     transition: transform 0.3s, box-shadow;
 }
 .card:hover{
     transform: scale(1.02);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 10px var(--shadow-hover);
 }
 .card img{
-    width: 75%;
-    height: 50%;
+    width: 35%;
     border-radius: var(--border-radius);
 }
-.card h3{
+.card h3 {
     margin: 1rem 0 0.5rem;
-    color: var(--text-color)
+    color: var(--text-color);
 }
+.card p{
+    margin: 0 0 0.5rem;
+    color: var(--text-color);
+}
+
 .btn {
     background-color: var(--primary-color);
     color: white;
@@ -150,7 +171,7 @@ body{
     font-size: 1rem;
 }
 
-@media(max-width: 768px){
+@media(max-width: 768px){ /* adaptando para o formato de celular */
     .main-content{
         flex-direction: column;
     }
@@ -159,5 +180,14 @@ body{
     }
     .cards {
         width: 100%;
-    }
+   }
+   .nav-links {
+    display: none;
+   }
+   .menu-toggle{
+    display: block;
+   }
+   .card img {
+    width: 100%;
+   }
 }

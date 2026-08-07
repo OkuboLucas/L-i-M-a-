@@ -1,0 +1,130 @@
+:root{
+    --background: #020914;
+    --background2: #07223a;
+    --painel: #0b2b3f;
+    --card: #0f3a55;
+    --texto: #fff;
+    --secondary-text: rgba(233,246,255, 0.7);
+    --line: rgba(255,255,255, 0.12);
+    --transparent: rgba(255,255,255, 0.02);
+    --border: rgba(0, 24, 45, 0.5);
+    --shine: rgba(255,255,255, 0.06);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Gremio, "Segoe UI", Roboto;
+    background: radial-gradient(1200px 600px at 10% 10%, rgba(255,255,255, 0.02), transparent), var(--background);
+    color: var(--texto);
+    min-height: 100vh;
+    padding: 20px;
+}
+.container { 
+    max-width: 80%;
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+    border-bottom: 1px solid var(--line);
+}
+.market-name{
+    color: var(--secondary-text);
+    font-weight: 700px;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+.cuneiforme {
+    display: grid;
+    grid-template-columns: 25% 1fr;
+    height: 100%;
+    gap: 10px;
+    padding: 10px;
+} 
+
+.sidebar{
+    position: relative;
+    height: 100%;
+    background-color: var(--painel);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px #518b9c60;
+    padding: 1rem;
+}
+.sidebar::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--transparent);
+}
+.sidebar img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+
+.Produtos {
+    border-top: 1px solid var(--line);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(140px, 1fr);
+    align-items: start;
+    gap: 20px;
+    margin-top: 1rem;
+    
+}
+.Produtos h3 {
+    margin-bottom: 1rem;
+    color: var(--texto);
+}
+.Produto {
+    background-color: var(--background2);
+    border: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    box-shadow: 0px 3px 6px #518b9c60;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: transform 0.3s, box-shadow;
+    min-height: 210px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0.3rem;
+}
+.Produto:hover{
+    transform: scale(1.01);
+    box-shadow: 0 4px 8px #518b9c7d;
+}
+.Produto img{
+    width: 100%;
+    height: 160px;
+    border-radius: 12px;
+    object-fit: cover;
+
+}
+.Produto p {
+    margin: 1rem 0 0.5;
+    padding: 1rem;
+}
+.btn{
+    background-color: var(--card);
+    color: var(--texto);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, scale 0.9s ease;
+    
+}
+.btn:hover{
+    background-color: #0b2b3f;
+}
